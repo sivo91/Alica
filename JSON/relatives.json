@@ -1,0 +1,23 @@
+
+[
+  {
+    "mainID":2,
+    "relatedID":[1,3],
+    "id":1
+  },
+  {
+    "mainID":3,
+    "relatedID":[1,2],
+    "id":2
+  },
+  {
+    "mainID":4,
+    "relatedID":[1,2],
+    "id":3
+  },
+  {
+    "mainID":1,
+    "relatedID":[3,4],
+    "id":4
+  }
+]
