@@ -52,6 +52,10 @@ export default function Entry({ itemData }) {
           </Link>
        }
 
+       {
+        itemData.related ?
+        <h2 className='text-center relatedText mt-3'>The best friends:</h2> : null
+       }
 
           <div className='relatedOutput'>
             {
@@ -102,6 +106,10 @@ export default function Entry({ itemData }) {
           flex-wrap:wrap;
           justify-content:space-evenly;
           cursor:pointer;
+         }
+
+         .relatedText {
+          color:blue;
          }
           
         `}</style>

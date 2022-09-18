@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
+
 export async function getStaticProps() {
   const allData = entryCards();
   return {
@@ -15,14 +16,17 @@ export async function getStaticProps() {
 
 
 
-function about({ allData }) {
+function About({ allData }) {
   return (
 <>
 
     <h1 className='text-center'>about</h1>
+    <h1 className='text-center'>JEST - TEXT FOR TESTING</h1>
 
     <div className='d-flex justify-content-center'>
-     { allData.map(({ id, title, img }) => (
+     { 
+       allData ? 
+       allData.map(({ id, title, img }) => (
               <Link key={id} href={`/${id}`}>
                <div className="card my-5">
                  <div className="img mt-4">
@@ -37,7 +41,7 @@ function about({ allData }) {
                  
                 </div>
               </Link>
-            ))
+            )) : null
           }
    </div>
 
@@ -84,4 +88,4 @@ function about({ allData }) {
   )
 }
 
-export default about
+export default About
