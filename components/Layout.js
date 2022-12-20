@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Footer from './Footer'
+
 
 
 function Layout({ children }) {
@@ -8,7 +8,6 @@ function Layout({ children }) {
     <div>
      <Navbar/>
      { children }  {/* children vsetko dodane */}
-     <Footer/>
     </div>
   )
 }
