@@ -20,8 +20,8 @@ function About({ allData }) {
   return (
 <>
 
-    <h1 className='text-center'>about</h1>
-    <h1 className='text-center'>JEST - TEXT FOR TESTING</h1>
+    <h1 className='text-center fs-3'>Final Basic Full-Stack App</h1>
+    <h1 className='text-center fs-3'>JEST - TEXT FOR TESTING</h1>
 
     <div className='d-flex justify-content-center'>
      { 
